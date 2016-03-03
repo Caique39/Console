@@ -14,7 +14,7 @@
 
 	var addContent = function addContent(e) {
 		ifrw.document.open();
-		ifrw.document.write(textArea.value || '<h3 style="font-family: sans-serif; color: gray;">O resultado ficará aqui...</h3>'); 
+		ifrw.document.write(textArea.value || '<h3 style="font-family: sans-serif; color: gray;">O resultado ficará aqui...</h3>');
   	ifrw.document.close();
   	localStorage.setItem('code', textArea.value);
   	return textArea.value;
@@ -27,10 +27,10 @@
 			if(nameFile) {
 				saveAs(file, nameFile + '.html');
 				alert('Arquivo criado com sucesso!');
-			}else {
+			} else {
 				alert('Arquivo não pode ser criado.');
 			}
-		}else {
+		} else {
 			window.alert('Não foi possível criar arquivo vazio.');
 		}
 	};
@@ -44,10 +44,10 @@
 			if(nameFile) {
 				saveAs(file, nameFile + '.css');
 				alert('Arquivo criado com sucesso!');
-			}else {
+			} else {
 				alert('Arquivo não pode ser criado.');
 			}
-		}else {
+		} else {
 			window.alert('Não encontramos nenhum estilo em seu código.');
 		}
 	};
@@ -61,22 +61,22 @@
 			if(nameFile) {
 				saveAs(file, nameFile + '.js');
 				alert('Arquivo criado com sucesso!');
-			}else {
+			} else {
 				alert('Arquivo não pode ser criado.');
 			}
-		}else {
+		} else {
 			window.alert('Não encontramos nenhum script em seu código');
 		}
 	};
 
 	var scroll = function scroll() {
-		(document.body.scrollTop += 2) >= document.querySelector('.header').clientHeight ? 
-			document.body.scrollTop = document.querySelector('.header').clientHeight : setTimeout(scroll, 10); 
-	}; 
+		(document.body.scrollTop += 2) >= document.querySelector('.header').clientHeight ?
+			document.body.scrollTop = document.querySelector('.header').clientHeight : setTimeout(scroll, 10);
+	};
 
 	var contentWindowDefault = function contentWindowDefault() {
-		ifrw.document.open(); 
-		ifrw.document.write('<h3 style="font-family: sans-serif; color: gray;">O resultado ficará aqui...</h3>'); 
+		ifrw.document.open();
+		ifrw.document.write('<h3 style="font-family: sans-serif; color: gray;">O resultado ficará aqui...</h3>');
 		ifrw.document.close();
 	};
 
@@ -87,7 +87,7 @@
 			}
 		}
    	return;
-	};	
+	};
 
 	document.addEventListener('DOMContentLoaded', storageCode);
 
@@ -112,8 +112,8 @@
 	});
 
 	emmet.require('textarea').setup({
-    pretty_break: true, 
-    use_tab: true       
+    pretty_break: true,
+    use_tab: true
 	});
 
 	saveCompleteButton.addEventListener('click', saveComplete, false);
