@@ -2,15 +2,15 @@
 	'use strict';
 
 	var iframe = document.querySelector('.result__window'),
-  		ifrw = iframe.contentWindow || iframe.contentDocument.document || iframe.contentDocument,
-			saveCompleteButton = document.querySelector('.saveComplete'),
-			saveCSSButton = document.querySelector('.saveCSS'),
-			saveJSButton = document.querySelector('.saveJS'),
-			textArea = document.querySelector('.code__field'),
-			clearCode = document.querySelector('.clear'),
-			openWindow = document.querySelector('.openWindow'),
-			appCache = window.applicationCache,
-			selector = '';
+  	ifrw = iframe.contentWindow || iframe.contentDocument.document || iframe.contentDocument,
+		saveCompleteButton = document.querySelector('.saveComplete'),
+		saveCSSButton = document.querySelector('.saveCSS'),
+		saveJSButton = document.querySelector('.saveJS'),
+		textArea = document.querySelector('.code__field'),
+		clearCode = document.querySelector('.clear'),
+		openWindow = document.querySelector('.openWindow'),
+		appCache = window.applicationCache,
+		selector = '';
 
 	var addContent = function addContent(e) {
 		ifrw.document.open();
@@ -112,6 +112,11 @@
 	});
 
 	emmet.require('textarea').setup({
+<<<<<<< HEAD
+=======
+		pretty_break: true,
+		use_tab: true,
+>>>>>>> master
     pretty_break: true,
     use_tab: true
 	});
