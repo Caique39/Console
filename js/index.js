@@ -112,11 +112,8 @@
 	});
 
 	emmet.require('textarea').setup({
-<<<<<<< HEAD
-=======
 		pretty_break: true,
 		use_tab: true,
->>>>>>> master
     pretty_break: true,
     use_tab: true
 	});
