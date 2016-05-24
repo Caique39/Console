@@ -1,4 +1,4 @@
-;(function(window, document, undefined) {
+;(function (window, document, undefined) {
 	'use strict';
 
 	var iframe = document.querySelector('.result__window'),
@@ -101,22 +101,22 @@
 
 	document.addEventListener('DOMContentLoaded', storageCode);
 
-	window.addEventListener('load', function(e) {
-		appCache.addEventListener('updateready', function(e) {
+	window.addEventListener('load', function (e) {
+		appCache.addEventListener('updateready', function (e) {
 			if (appCache.status == appCache.UPDATEREADY) {
 				appCache.update();
 			}
 		}, false);
 	}, false);
 
-	clearCode.addEventListener('click', function() {
+	clearCode.addEventListener('click', function () {
  		textArea.value = '';
  		textArea.focus();
  		contentWindowDefault();
  		scroll();
 	}, false);
 
-	openWindow.addEventListener('click', function() {
+	openWindow.addEventListener('click', function () {
 		var myWindow = window.open('','_blank');
 		myWindow.document.write(addContent());
 	});
