@@ -104,7 +104,7 @@
 	window.addEventListener('load', function(e) {
 		appCache.addEventListener('updateready', function(e) {
 			if (appCache.status == appCache.UPDATEREADY) {
-				appCache.swapCache();
+				appCache.update();
 			}
 		}, false);
 	}, false);
